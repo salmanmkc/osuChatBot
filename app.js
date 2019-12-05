@@ -9,6 +9,7 @@ const client = new Banchojs.BanchoClient({
 const startBot = async () => {
     try{
         await client.connect();
+        console.log("Successfully connected to the bot");
 
     } catch(e1){
         console.error(e1);
