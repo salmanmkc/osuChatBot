@@ -15,3 +15,5 @@ const startBot = async () => {
         console.error(e1);
     }
 }
+
+startBot();
