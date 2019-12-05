@@ -1,5 +1,5 @@
 const Banchojs = require("bancho.js");
-const {USERNAME, PASSWORD} = require("./credentials");
+const { USERNAME, PASSWORD } = require("./credentials");
 
 const client = new Banchojs.BanchoClient({
     username: USERNAME,
@@ -14,6 +14,6 @@ const startBot = async () => {
     } catch(e1){
         console.error(e1);
     }
-}
+};
 
 startBot();
