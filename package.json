@@ -15,5 +15,8 @@
   "bugs": {
     "url": "https://github.com/salmanmkc/osuChatBot/issues"
   },
-  "homepage": "https://github.com/salmanmkc/osuChatBot#readme"
+  "homepage": "https://github.com/salmanmkc/osuChatBot#readme",
+  "dependencies": {
+    "bancho.js": "^0.9.6"
+  }
 }
