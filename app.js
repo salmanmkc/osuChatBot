@@ -11,11 +11,15 @@ const startBot = async () => {
         await client.connect();
         console.log("Successfully connected to the bot");
         client.on("PM", async({message, user}) =>{
-            if(user.ircUsername === USERNAME){
-                client.
-            }
+            // if(user.ircUsername === USERNAME){
+            //     return.
+            // }
             if(message[0] !== "!") return;
-            
+            const command = message.split(" ")[0].toLowerCase();
+            switch(command){
+                case ".helloworld":
+                    return await user.sendMessage(`Hey ${user.ircUsername}`);
+            }
         });
     } catch(e1){
         console.error(e1);
